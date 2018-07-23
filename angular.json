@@ -123,5 +123,10 @@
       }
     }
   },
-  "defaultProject": "nearby-shops-web"
+  "defaultProject": "nearby-shops-web",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
