@@ -10,7 +10,7 @@ import {TokenStorage} from "../../token.storage";
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router: Router, private userService: UserService, private token: TokenStorage) { }
+  constructor(private router: Router, private userService: UserService, private tokenStorage: TokenStorage) { }
 
   ngOnInit() {
   }
@@ -20,7 +20,13 @@ export class LoginComponent implements OnInit {
         data => {
           console.log(data);
           // this.token.saveToken(data.token);
-          // this.router.navigate(['/nearby-shops']);
+          if (data.token) {
+              console.log('successful login: ' + data.token);
+              this.tokenStorage.saveToken(data.token);
+              this.router.navigate(['/nearby-shops']);
+          } else {
+              console.log('unsuccessful login.');
+          }
         }
     );
   }
