@@ -1,10 +1,10 @@
-<h2>Nearby Shops</h2>
-
-<ul class="shops">
-  <li *ngFor="let shop of shops">
-    <img src="{{shop.picture}}" />
-      {{shop.name}}
-    <button class="like" title="like {{shop.name}}" (click)="like(shop)">like</button>
-    <button class="like" title="like {{shop.name}}" (click)="dislike(shop)">dislike</button>
-  </li>
-</ul>
+<div class="shops row justify-content-left">
+  <div *ngFor="let shop of shops" class="item col-sm-3">
+    <div>
+        <h4>{{ shop.name }}</h4>
+        <img src="{{shop.picture}}" class="img img-fluid"/><br><br>
+        <button class="btn btn-danger" title="like {{shop.name}}" (click)="dislike(shop)">Dislike</button>&nbsp;
+        <button class="btn btn-success" title="like {{shop.name}}" (click)="like(shop)">Like</button>
+    </div>
+  </div>
+</div>

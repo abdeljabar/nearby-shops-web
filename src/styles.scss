@@ -1,0 +1,24 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.shops {
+  margin: 0 auto !important;
+
+  .item {
+    margin-bottom: 20px;
+
+    div {
+      border: 2px solid grey;
+      text-align: center;
+      padding: 5px;
+
+      h4 {
+        text-transform: capitalize;
+      }
+    }
+  }
+}
