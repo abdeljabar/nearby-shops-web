@@ -37,5 +37,17 @@ export class ShopService {
         return this.http.post(url, '', this.httpOptions);
     }
 
+    unlike(shop: Shop): Observable<any> {
+        const url = this.url + shop.unlike_action_uri;
+        console.log(url);
+        return this.http.post(url, '', this.httpOptions);
+    }
+
+    dislike(shop: Shop): Observable<any> {
+        const url = this.url + shop.dislike_action_uri;
+        console.log(url);
+        return this.http.post(url, '', this.httpOptions);
+    }
+
 
 }

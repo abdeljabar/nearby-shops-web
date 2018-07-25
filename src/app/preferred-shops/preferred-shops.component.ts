@@ -25,4 +25,11 @@ export class PreferredShopsComponent implements OnInit {
             });
     }
 
+    unlike(shop: Shop): void {
+        console.log(shop);
+
+        this.shopService.unlike(shop).subscribe();
+        this.shops = this.shops.filter(s => s !== shop);
+    }
+
 }

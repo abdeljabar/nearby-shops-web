@@ -32,4 +32,11 @@ export class NearbyShopsComponent implements OnInit {
         this.shops = this.shops.filter(s => s !== shop);
     }
 
+    dislike(shop: Shop): void {
+        console.log(shop);
+
+        this.shopService.dislike(shop).subscribe();
+        this.shops = this.shops.filter(s => s !== shop);
+    }
+
 }
