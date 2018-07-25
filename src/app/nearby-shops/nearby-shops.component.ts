@@ -25,4 +25,11 @@ export class NearbyShopsComponent implements OnInit {
             });
     }
 
+    like(shop: Shop): void {
+        console.log(shop);
+
+        this.shopService.like(shop).subscribe();
+        this.shops = this.shops.filter(s => s !== shop);
+    }
+
 }
