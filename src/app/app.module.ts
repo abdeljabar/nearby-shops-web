@@ -1,24 +1,36 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 
 import { AppComponent } from './app.component';
 import { NearbyShopsComponent } from './nearby-shops/nearby-shops.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { PreferredShopsComponent } from './preferred-shops/preferred-shops.component';
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import {TokenInterceptor} from "./token.interceptor";
+import {TokenStorage} from "../token.storage";
 
 @NgModule({
     declarations: [
         AppComponent,
         NearbyShopsComponent,
-        PreferredShopsComponent
+        PreferredShopsComponent,
+        RegisterComponent,
+        LoginComponent
     ],
     imports: [
         BrowserModule,
         HttpClientModule,
         AppRoutingModule
     ],
-    providers: [],
+    providers: [
+        {
+            provide: HTTP_INTERCEPTORS,
+            useClass: TokenInterceptor,
+            multi: true
+        }, TokenStorage
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }

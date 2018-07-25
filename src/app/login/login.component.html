@@ -1,0 +1,10 @@
+<label>
+    Email:
+    <input #email />
+</label>
+<label>
+    Password:
+    <input #password type="password"/>
+</label>
+
+<button (click)="login(email.value, password.value)">Login</button>
