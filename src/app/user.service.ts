@@ -16,10 +16,19 @@ export class UserService {
         const fd = new FormData();
         fd.append('email', email);
         fd.append('password', password);
-
         console.log(fd);
+
         const url = this.url + '/login_check';
         return this.http.post(url, fd);
     }
 
+    register(email: string, password: string) {
+        const fd = new FormData();
+        fd.append('email', email);
+        fd.append('password', password);
+        console.log(fd);
+
+        const url = this.url + '/register';
+        return this.http.post(url, fd);
+    }
 }

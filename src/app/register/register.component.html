@@ -1,3 +1,10 @@
-<p>
-  register works!
-</p>
+<label>
+  Email:
+  <input #email />
+</label>
+<label>
+  Password:
+  <input #password type="password"/>
+</label>
+
+<button (click)="register(email.value, password.value)">Register</button>
