@@ -22,5 +22,11 @@ export class ShopService {
         return this.http.get<Shop[]>(url);
     }
 
+    getPreferred(): Observable<Shop[]> {
+
+        const url = this.url + '?liked=true';
+        return this.http.get<Shop[]>(url);
+    }
+
 
 }
