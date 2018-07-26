@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ShopService} from "../shop.service";
-import {Shop} from "../shop";
+import {ShopService} from "../services/shop.service";
+import {Shop} from "../models/shop";
 
 @Component({
     selector: 'app-nearby-shops',

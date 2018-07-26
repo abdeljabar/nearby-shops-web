@@ -10,7 +10,7 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import {TokenInterceptor} from "./token.interceptor";
 import {TokenStorage} from "../token.storage";
-import {AlertService} from "./alert.service";
+import {AlertService} from "./services/alert.service";
 import {AlertComponent} from "./alert/alert.component";
 
 @NgModule({

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Observable, of} from "rxjs/index";
-import {Shop} from "./shop";
+import {Shop} from "../models/shop";
 import {AlertService} from "./alert.service";
 import {catchError, tap} from "rxjs/internal/operators";
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
-import {UserService} from "../user.service";
-import {AlertService} from "../alert.service";
+import {UserService} from "../services/user.service";
+import {AlertService} from "../services/alert.service";
 
 @Component({
     selector: 'app-register',
