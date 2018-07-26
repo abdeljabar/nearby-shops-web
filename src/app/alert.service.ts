@@ -10,7 +10,7 @@ import {Alert} from "./alert";
 export class AlertService {
 
     private subject = new Subject<Alert>();
-    private keepAfterRouteChange = false;
+    private keepAfterRouteChange = true;
 
     constructor(private router: Router) {
         router.events.subscribe(event => {

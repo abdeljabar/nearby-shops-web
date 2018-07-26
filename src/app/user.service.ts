@@ -22,7 +22,11 @@ export class UserService {
         console.log(fd);
 
         const url = this.url + '/login_check';
-        return this.http.post(url, fd);
+        return this.http.post(url, fd)
+            .pipe(
+                tap(_ => this.log('Login was successful.', 'success')),
+                catchError(this.handleError<User>('Login'))
+            );
     }
 
     register(email: string, password: string) {
@@ -53,6 +57,9 @@ export class UserService {
     }
 
     log(message: string, status: string) {
+
+        console.log(message);
+
         if (status === 'error') {
             this.alertService.error(message);
         } else {

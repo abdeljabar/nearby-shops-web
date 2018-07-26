@@ -19,9 +19,6 @@ export class RegisterComponent implements OnInit {
         this.userService.register(email, password).subscribe(
             response => {
                 if (response.status && response.status=== 201) {
-                    let message = 'Registration was successful.';
-                    console.log(message);
-                    this.alertService.info(message);
                     this.router.navigate(['/login']);
                 }
             }
