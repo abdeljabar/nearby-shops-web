@@ -10,6 +10,8 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import {TokenInterceptor} from "./token.interceptor";
 import {TokenStorage} from "../token.storage";
+import {AlertService} from "./alert.service";
+import {AlertComponent} from "./alert/alert.component";
 
 @NgModule({
     declarations: [
@@ -17,7 +19,8 @@ import {TokenStorage} from "../token.storage";
         NearbyShopsComponent,
         PreferredShopsComponent,
         RegisterComponent,
-        LoginComponent
+        LoginComponent,
+        AlertComponent
     ],
     imports: [
         BrowserModule,
@@ -29,7 +32,7 @@ import {TokenStorage} from "../token.storage";
             provide: HTTP_INTERCEPTORS,
             useClass: TokenInterceptor,
             multi: true
-        }, TokenStorage
+        }, TokenStorage, AlertService
     ],
     bootstrap: [AppComponent]
 })
