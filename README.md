@@ -1,27 +1,39 @@
-# NearbyShopsWeb2
+# Hidden Founders web coding challenge - Client Side
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+A coding challenge provided by Hidden Founders.
 
-## Development server
+For the API (server-side) part of the project [click here](https://bitbucket.org/taoufikallah88/nearby-shops-api)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Overview
+The coding challenge is about implementing an app that lists shops nearby.
 
-## Code scaffolding
+* Signing up using email and password
+* Signing in using email and password
+* Displaying list of nearby shops
+* Adding/liking a shop to the list of preferred shops
+* Disliking a shop and hiding it from the list of nearby shops for 2 hours
+* Removing/unliking a shop from the list of preferred shops
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies used
 
-## Build
+- [Angular](https://angular.io/)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Requirements
 
-## Running unit tests
+- [Node](https://nodejs.org/)
+- [Angular 6](https://angular.io/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Project Setup
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+##### 1. Clone the repository using the following command in terminal:
+    git clone git@bitbucket.org:taoufikallah88/nearby-shops-web.git
+    
+##### 2. Move to the project root folder
+    cd nearby-shops-web
+    
+##### 3. Install the project dependencies:
+    npm install
+         
+##### 5. Run project
+    ng serve --open
+   
