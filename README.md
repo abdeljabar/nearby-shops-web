@@ -1,6 +1,6 @@
 # Hidden Founders web coding challenge - Client Side
 
-A coding challenge provided by Hidden Founders.
+[A coding challenge](https://github.com/hiddenfounders/web-coding-challenge) provided by [Hidden Founders](https://hiddenfounders.com/)
 
 For the API (server-side) part of the project [click here](https://bitbucket.org/taoufikallah88/nearby-shops-api)
 
@@ -36,4 +36,5 @@ The coding challenge is about implementing an app that lists shops nearby.
          
 ##### 5. Run project
     ng serve --open
-   
+
+For more information, please visit [the Coding Challenge page](https://github.com/hiddenfounders/web-coding-challenge).
