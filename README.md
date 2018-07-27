@@ -2,7 +2,7 @@
 
 [A coding challenge](https://github.com/hiddenfounders/web-coding-challenge) provided by [Hidden Founders](https://hiddenfounders.com/)
 
-For the API (server-side) part of the project [click here](https://bitbucket.org/taoufikallah88/nearby-shops-api)
+For the API (server-side) part of the project [click here](https://github.com/abdeljabar/nearby-shops-api)
 
 ## Overview
 The coding challenge is about implementing an app that lists shops nearby.
